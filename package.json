@@ -8,6 +8,9 @@
   },
   "author": "reharki@gmail.com",
   "license": "ISC",
+  "dependencies":{
+    "core":"somelocation"
+  },
   "devDependencies": {
     "babel": "^5.5.6",
     "babel-runtime": "^5.5.6",
