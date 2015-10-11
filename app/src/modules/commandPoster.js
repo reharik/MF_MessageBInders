@@ -8,9 +8,9 @@ module.exports = function(eventmodels, eventstore){
         // fortify commands with metadata like date and user
         command.createDate = new Date();
         var appendData = { expectedVersion: -2};
-        appendData.events = [new core.EventData( commandName,
+        appendData.events = [eventmodels.eventData( commandName,
                                             { data:command },
                                             {eventName:commandName, continuationId:uuid.v4(), streamType:'command'})];
-        return core.appendToStreamPromise('commands', appendData);
+        return eventstore.appendToStreamPromise('commands', appendData);
     }
 };
