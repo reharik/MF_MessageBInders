@@ -3,7 +3,7 @@
  */
 
 
-module.exports = function(core){
+module.exports = function(eventmodels, eventstore){
     return function(command, commandName){
         // fortify commands with metadata like date and user
         command.createDate = new Date();
