@@ -5,8 +5,16 @@
 'use strict';
 
 var container = require('registry');
+var extend = require('extend');
 
 module.exports = function index(options) {
+   var options = {
+      logger: {
+         moduleName: 'MessageBinders'
+      }
+   };
+   extend(options, _options || {});
+   var container = registry(options);
    return {
       commands: container.getInstanceOf(commands),
       commandPoster: commandPoster

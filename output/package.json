@@ -1,5 +1,5 @@
 {
-  "name": "mf_messagebinders",
+  "name": "messagebinders",
   "version": "1.0.0",
   "description": "",
   "main": "app/index.js",
@@ -9,9 +9,11 @@
   "author": "reharki@gmail.com",
   "license": "ISC",
   "dependencies":{
+    "corelogger": "git+https://github.com/reharik/core_logger.git",
     "dagon": "git+https://github.com/reharik/dagon.git#local",
     "eventmodels": "git+https://github.com/reharik/core_eventmodels.git",
     "eventstore": "git+https://github.com/reharik/core_eventstore.git",
+    "extend": "^3.0.0",
     "invariant": "^2.1.0"
   },
   "devDependencies": {

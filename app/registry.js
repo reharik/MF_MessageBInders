@@ -11,9 +11,13 @@ module.exports = function(_options) {
     var result;
     try {
         result = new container(x=> x.pathToRoot(path.join(__dirname, '..'))
-                .requireDirectoryRecursively('./app/src')
-        .groupAllInDirectory('./app/src/Commands', 'Commands')
-        .complete());
+            .requireDirectoryRecursively('./app/src')
+            .groupAllInDirectory('./app/src/Commands', 'Commands')
+            .for('eventmodels').instantiate(i=>i.asFunc())
+            .for('eventstore').instantiate(i=>i.asFunc().withParameters(options || {}))
+            .for('corelogger').renameTo('logger').instantiate(i=>i.asFunc().withParameters(options.logger || {}))
+
+            .complete());
     } catch (ex) {
         console.log(ex);
         console.log(ex.stack);
