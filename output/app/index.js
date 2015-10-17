@@ -4,7 +4,7 @@
 
 'use strict';
 
-var container = require('registry');
+var container = require('./registry');
 var extend = require('extend');
 
 module.exports = function index(options) {
