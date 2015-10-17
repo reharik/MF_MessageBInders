@@ -7,7 +7,7 @@
 var container = require('./registry');
 var extend = require('extend');
 
-module.exports = function index(options) {
+module.exports = function index(_options) {
    var options = {
       logger: {
          moduleName: 'MessageBinders'
