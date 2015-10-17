@@ -14,7 +14,7 @@ module.exports = function index(_options) {
    extend(options, _options || {});
    var container = registry(options);
    return {
-      commands: container.getInstanceOf(commands),
+      commands: container.getInstanceOf('Commands'),
       commandPoster: commandPoster
    };
 };
