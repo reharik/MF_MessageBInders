@@ -17,7 +17,8 @@ module.exports = function(_options) {
             .for('eventmodels').instantiate(i=>i.asFunc())
             .for('eventstore').instantiate(i=>i.asFunc().withParameters(options || {}))
             .for('corelogger').renameTo('logger').instantiate(i=>i.asFunc().withParameters(options.logger || {}))
-
+            .for('ramda').renameTo('R')
+            .for('ramdafantasy').renameTo('_fantasy')
             .complete());
     } catch (ex) {
         console.log(ex);
