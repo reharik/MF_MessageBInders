@@ -12,7 +12,7 @@ module.exports = function(_options) {
     return registry(x=>
         x.pathToRoot(path.join(__dirname, '..'))
             .requireDirectoryRecursively('./app/src')
-            .groupAllInDirectory('./app/src/commands', 'Commands')
+            .groupAllInDirectory('./app/src/commands', 'commands')
             .requiredModuleRegistires(['eventstore', 'appfuncs'])
             .complete());
 };
