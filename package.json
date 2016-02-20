@@ -10,19 +10,13 @@
   "license": "ISC",
   "dependencies":{
     "corelogger": "git+https://github.com/reharik/core_logger.git",
-    "dagon": "git+https://github.com/reharik/dagon.git#local",
-    "eventmodels": "git+https://github.com/reharik/core_eventmodels.git",
-    "eventstore": "git+https://github.com/reharik/core_eventstore.git",
+    "dagon": "git://github.com/reharik/dagon.git",
+    "appfuncs": "git://github.com/reharik/core_applicationFunctions.git",
+    "eventstore": "git://github.com/reharik/core_eventStore.git",
     "extend": "^3.0.0",
     "invariant": "^2.1.0"
   },
   "devDependencies": {
-    "babel": "^5.5.6",
-    "babel-runtime": "^5.5.6",
-    "babelify": "^5.0.4",
-    "del": "^1.2.0",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.1.0",
     "mocha": "2.1.x",
     "must": "0.13.0-beta2"
   }

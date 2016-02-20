@@ -13,9 +13,5 @@ module.exports = function index(_options) {
       }
    };
    extend(options, _options || {});
-   var container = registry(options);
-   return {
-      commands: container.getHashOfGroup('Commands'),
-      commandPoster: container.getInstanceOf('commandPoster')
-   };
+   return registry(options);
 };
