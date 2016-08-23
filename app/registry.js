@@ -13,6 +13,7 @@ module.exports = function(_options) {
         x.pathToRoot(path.join(__dirname, '..'))
             .requireDirectoryRecursively('./app/src')
             .groupAllInDirectory('./app/src/commands', 'commands')
-            .requiredModuleRegistires(['eventstore', 'appfuncs'])
+            .requiredModuleRegistires(['ges-eventsourcing'])
+            .for('applicationFunctions').renameTo('appfuncs')
             .complete());
 };
