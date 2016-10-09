@@ -10,7 +10,7 @@ module.exports = function(appfuncs, eventstore, uuid){
         var appendData = { expectedVersion: -2};
 
         appendData.events = [
-            appfuncs.outGoingEvent({
+            appfuncs.eventFunctions.outGoingEvent({
                 eventName:commandName,
                 data: command,
                 metadata:{eventName:commandName, continuationId:uuid.v4(), streamType:'command'}
