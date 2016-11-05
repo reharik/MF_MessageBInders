@@ -1,5 +1,5 @@
 module.exports = function(invariant) {
-  return function (birthDate,
+  return function ({birthDate:dob,
                    color,
                    defaultClientRate,
                    firstName,
@@ -12,7 +12,7 @@ module.exports = function(invariant) {
                    street2,
                    city,
                    state,
-                   zipCode) {
+                   zipCode}) {
     invariant(firstName, 'hireTrainer requires that you pass the trainers first name');
     invariant(lastName, 'hireTrainer requires that you pass the trainers last name');
     invariant(email, 'hireTrainer requires that you pass the trainers email');
@@ -25,7 +25,7 @@ module.exports = function(invariant) {
       contact: {
         firstName,
         lastName,
-        secondaryMobile,
+        secondaryPhone,
         mobilePhone,
         address: {
           street1,
