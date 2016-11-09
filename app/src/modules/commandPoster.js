@@ -3,7 +3,7 @@
  */
 "use strict";
 
-module.exports = function(appfuncs, eventstore, uuid){
+module.exports = function(appfuncs, eventstore){
     return function(command, commandName, continuationId){
         // fortify commands with metadata like date and user
         command.createDate = new Date();
