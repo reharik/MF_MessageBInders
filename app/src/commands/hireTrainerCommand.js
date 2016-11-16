@@ -19,7 +19,6 @@ module.exports = function(invariant) {
     invariant(mobilePhone, 'hireTrainer requires that you pass the trainers mobilePhone');
     return {
       credentials: {
-        email,
         password
       },
       contact: {
@@ -27,6 +26,7 @@ module.exports = function(invariant) {
         lastName,
         secondaryPhone,
         mobilePhone,
+        email,
         address: {
           street1,
           street2,
