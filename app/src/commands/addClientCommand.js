@@ -1,25 +1,19 @@
 module.exports = function(invariant) {
-  return function ({birthDate:dob,
-                   color,
-                   firstName,
+  return function ({firstName,
                    lastName,
                    secondaryPhone,
                    mobilePhone,
                    email,
-                   password,
                    street1,
                    street2,
                    city,
                    state,
                    zipCode}) {
-    invariant(firstName, 'hireTrainer requires that you pass the trainers first name');
-    invariant(lastName, 'hireTrainer requires that you pass the trainers last name');
-    invariant(email, 'hireTrainer requires that you pass the trainers email');
-    invariant(mobilePhone, 'hireTrainer requires that you pass the trainers mobilePhone');
+    invariant(firstName, 'addClient requires that you pass the clients first name');
+    invariant(lastName, 'addClient requires that you pass the clients last name');
+    invariant(email, 'addClient requires that you pass the clients email');
+    invariant(mobilePhone, 'addClient requires that you pass the clients mobilePhone');
     return {
-      credentials: {
-        password
-      },
       contact: {
         firstName,
         lastName,
@@ -33,9 +27,7 @@ module.exports = function(invariant) {
           state,
           zipCode
         }
-      },
-      dob,
-      color
+      }
     };
   }
 };
