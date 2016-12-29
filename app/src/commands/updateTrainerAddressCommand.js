@@ -9,6 +9,7 @@ module.exports = function(invariant) {
   }) {
     invariant(id, 'updateTrainerAddress requires that you pass the trainers id');
     return {
+      id,
       street1,
       street2,
       city,
