@@ -1,7 +1,7 @@
 module.exports = function(invariant) {
   return function ({
     id,
-    birthDate:dob,
+    birthDate,
     color,
     firstName,
     lastName,
@@ -13,7 +13,7 @@ module.exports = function(invariant) {
       id,
       firstName,
       lastName,
-      dob,
+      birthDate,
       color,
     }
   };

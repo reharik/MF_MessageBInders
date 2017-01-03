@@ -1,5 +1,5 @@
 module.exports = function(invariant) {
-  return function ({birthDate:dob,
+  return function ({birthDate,
                    color,
                    firstName,
                    lastName,
@@ -34,7 +34,7 @@ module.exports = function(invariant) {
           zipCode
         }
       },
-      dob,
+      birthDate,
       color
     };
   }
