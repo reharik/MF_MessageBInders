@@ -11,7 +11,8 @@ module.exports = function(invariant) {
                    street2,
                    city,
                    state,
-                   zipCode}) {
+                   zipCode,
+                   clients}) {
     invariant(firstName, 'hireTrainer requires that you pass the trainers first name');
     invariant(lastName, 'hireTrainer requires that you pass the trainers last name');
     invariant(email, 'hireTrainer requires that you pass the trainers email');
@@ -35,7 +36,8 @@ module.exports = function(invariant) {
         }
       },
       birthDate,
-      color
+      color,
+      clients
     };
   }
 };
