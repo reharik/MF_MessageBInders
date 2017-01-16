@@ -3,10 +3,11 @@ module.exports = function(invariant) {
     date,
     startTime,
     endTime,
-    trainer,
+      trainer,
     clients,
     notes,
     entityName}) {
+    
     invariant(appointmentType, 'scheduleAppointment requires that you pass the appointmentType');
     invariant(date, 'scheduleAppointment requires that you pass the appointment date');
     invariant(startTime, 'scheduleAppointment requires that you pass the appointment start time');
