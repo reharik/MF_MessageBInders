@@ -15,7 +15,7 @@ module.exports = function(invariant) {
         if(!commandName === 'scheduleAppointment') {
             invariant(appointmentId, `${commandName} requires that you pass the appointmentId`);
         }
-        if(commandName.startsWith('reschedule')){
+        if(commandName === 'rescheduleAppointmentToNewDay'){
             invariant(originalEntityName, `${commandName} requires that you pass in the originalEntityName`);
         }
         invariant(appointmentType, `${commandName} requires that you pass the appointmentType`);
@@ -39,7 +39,7 @@ module.exports = function(invariant) {
         if(!commandName === 'scheduleAppointment') {
             result.appointmentId = appointmentId;
         }
-        if(commandName.startsWith('reschedule')) {
+        if(commandName === 'rescheduleAppointmentToNewDay') {
             result.originalEntityName = originalEntityName;
         }
         return result;
