@@ -19,6 +19,7 @@ module.exports = function(invariant) {
             invariant(originalEntityName, `${commandName} requires that you pass in the originalEntityName`);
         }
         invariant(appointmentType, `${commandName} requires that you pass the appointmentType`);
+        invariant(trainer, `${commandName} requires that you pass trainer`);
         invariant(date, `${commandName} requires that you pass the appointment date`);
         invariant(startTime, `${commandName} requires that you pass the appointment start time`);
         invariant(endTime, `${commandName} requires that you pass the trainer`);
