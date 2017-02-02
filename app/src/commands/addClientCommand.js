@@ -8,12 +8,23 @@ module.exports = function(invariant) {
                    street2,
                    city,
                    state,
-                   zipCode}) {
+                   zipCode, 
+                  id,
+                  source,
+                  sourceNotes,
+                  birthDate,
+                  startDate}) {
     invariant(firstName, 'addClient requires that you pass the clients first name');
     invariant(lastName, 'addClient requires that you pass the clients last name');
     invariant(email, 'addClient requires that you pass the clients email');
     invariant(mobilePhone, 'addClient requires that you pass the clients mobilePhone');
+    invariant(startDate, 'addClient requires that you pass the clients startDate');
     return {
+      id,
+      source,
+      sourceNotes,
+      birthDate,
+      startDate,
       contact: {
         firstName,
         lastName,
