@@ -5,7 +5,7 @@ module.exports = function(invariant) {
     invariant(trainer.contact.email, 'hireTrainer requires that you pass the trainers email');
     invariant(trainer.contact.mobilePhone, 'hireTrainer requires that you pass the trainers mobilePhone');
     invariant(trainer.credentials.password, 'hireTrainer requires that you pass the trainers password');
-    invariant(trainer.credentialsrole, 'hireTrainer requires that you pass the trainers role');
+    invariant(trainer.credentials.role, 'hireTrainer requires that you pass the trainers role');
     return trainer;
   };
 };
