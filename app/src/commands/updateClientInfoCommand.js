@@ -3,6 +3,7 @@ module.exports = function(invariant) {
     id,
     firstName,
     lastName,
+    birthDate
   }) {
     invariant(id, 'updateTrainerInfo requires that you pass the trainers id');
     invariant(firstName, 'updateTrainerInfo requires that you pass the trainers first name');
@@ -10,7 +11,8 @@ module.exports = function(invariant) {
     return {
       id,
       firstName,
-      lastName
+      lastName,
+      birthDate
     }
   };
-}
+};
