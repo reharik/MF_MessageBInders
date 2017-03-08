@@ -11,7 +11,7 @@
   "dependencies":{
     "corelogger": "reharik/core_logger.git",
     "dagon": "reharik/dagon.git",
-    "ges-eventsourcing": "reharik/ges-eventsourcing.git",
+    "ges-eventsourcing": "reharik/ges-eventsourcing#eventstore_node",
     "extend": "^3.0.0",
     "invariant": "^2.1.0"
   },
