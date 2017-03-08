@@ -206,6 +206,16 @@ eventstore-node@^0.0.28:
     protobufjs "^5.0"
     uuid "^2.0"
 
+eventstore-node@^0.0.29:
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/eventstore-node/-/eventstore-node-0.0.29.tgz#6e39592d48be6096ba7fa19ad334cca0846a8df1"
+  dependencies:
+    "@types/long" "^3.0.31"
+    "@types/node" "^6.0.47"
+    long "^3.2"
+    protobufjs "^5.0"
+    uuid "^2.0"
+
 extend@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.0.tgz#5a474353b9f3353ddd8176dfd37b91c83a46f1d4"
