@@ -9,8 +9,8 @@
   "author": "reharki@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "corelogger": "reharik/core_logger.git",
-    "dagon": "reharik/dagon.git",
+    "corelogger": "reharik/core_logger",
+    "dagon": "reharik/dagon",
     "eventstore-node": "^0.0.29",
     "extend": "^3.0.0",
     "ges-eventsourcing": "reharik/ges-eventsourcing#eventstore_node",
