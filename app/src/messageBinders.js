@@ -4,9 +4,8 @@
 
 "use strict";
 
-module.exports = function(commands, commandPoster) {
+module.exports = function(commands) {
     return {
-        commands,
-        commandPoster
+        commands
     }
 };
